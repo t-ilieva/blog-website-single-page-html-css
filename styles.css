@@ -1,0 +1,725 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* TITTLE */
+
+.header-container{
+    color: white;
+    font-weight:530;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+
+/*NAVIGATION BAR*/
+
+.brand-title{
+    margin: .5rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightskyblue;
+    color: white;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    background-color: rgb(82, 82, 206);
+}
+
+.navbar-links li:active{
+    background-color: rgb(36, 36, 112);
+    text-decoration: underline;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 576px){
+    .header-container{
+        display: none;
+    }
+
+    .brand-title{
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+}
+
+/*---NAVIGATION BAR---*/
+
+.top-image{
+    display: flex;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /*border-bottom: 20px solid lightskyblue;*/
+    background-color: transparent
+}
+
+/* TOP ARTICLE */
+
+.post-tittle{
+    margin-top: 10%;
+    padding: 30px 30px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    border-style: double;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.img-second{
+    padding: 30px 30px 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.img-info{
+    width: 100%;
+}
+
+.img-third{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.img-info h2 {
+    padding: 30px 30px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.img-info p {
+    padding: 0px 30px 20px;
+    font-family: arial;
+    text-align: justify;
+}
+
+/* ---TOP ARTICLE--- */
+
+
+
+/* FLEXBOX CONTENT */
+
+.second-article{
+    margin-top: 10px;
+    padding: 30px 30px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    border-style: double;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.container div{
+    border: 1px rgba(0, 0, 0, 0.315) groove;
+    padding: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container p{
+    text-align: justify;
+}
+
+.container .section-1, .container .section-2, .container .section-3, .container .section-4{
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.box-1 h2, .box-2 h2, .box-3 h2, .box-4 h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.box-1 p, .box-2 p, .box-3 p, .box-4 p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        display: flex;
+    }
+
+    .container div{
+        border: 1.5px rgba(0, 0, 0, 0.459) dotted;
+        height: 400px;
+        width: 25%;
+        padding: 2%;
+        overflow: scroll;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+}
+
+/* --- FLEXBOX CONTENT --- */
+
+
+
+/*QUIZ*/
+
+#quiz {
+	margin-left: 3%;
+	background: lightskyblue;
+    padding: 10px 20px 10px 20px;
+	width: 50%;
+	border-radius: 20px;
+	float: left;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+.quiz h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(82, 82, 206) ;
+    color: white;
+}
+
+.quiz p {
+    padding: 20px 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+#textbox {
+	height: 30px;
+    width: 35%;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 5px;
+}
+
+input[type=text]:focus {
+    background-color: lightgreen;
+  }
+  
+#button {
+	background: green;
+	border: none;
+	border-radius: 6px;
+	padding: 13px;
+	color: white;
+	font-size: 17px;
+	transition-duration: .5s;
+	margin-top: 15px;
+  }
+  
+#button:hover {
+    background: white;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+#button:active {
+    /* Push the button downwards when pressed */
+   transform: translateY(0);
+  }
+
+#after_submit {
+	visibility: hidden;
+	background: #dd8083;
+	padding: 10px 20px 10px 20px;
+	width: 42%;
+	border-radius: 20px;
+	float: left;
+	margin-left: 2.5%;
+    margin-right: 2.5%;
+    overflow: hidden;
+}
+
+#picture {
+	width: 67%;
+	height: auto;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+    overflow: hidden;
+}
+
+#multiplechoice {
+	display: inline;
+} 
+
+.quiz-info{
+    width: 42%;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    float: left;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(144, 203, 223);
+}
+
+/*---QUIZ----*/
+
+
+/* FOOTER */
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 10px;
+    background: lightskyblue;
+}
+
+.footer-container{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+    padding: 3px;
+    clear: both;
+    height: auto;
+    font-size: 20px;
+}
+
+.follow{
+    width: 100%;
+    flex-direction: column;
+}
+
+.follow .socials{
+    margin-left: 35%;
+    margin-bottom: 1em;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    justify-content: space-around;
+    color: darkblue
+}
+
+/*---FOOTER----*/
+
+.socials a:hover{
+    color: white;
+}
+
+.socials a:active{
+    color: lightskyblue;
+}
+
+
+
+
+/*Responsive design*/
+
+@media screen and (max-width: 576px){
+
+    .brand-title{
+        font-size: 15px;
+    }
+
+    .post-tittle{
+        font-size: 28px;
+    }
+
+    .img-info h2{
+        font-size: 20px;
+    }
+
+    .img-info p{
+        font-size: 15px;
+    }
+
+    .second-article{
+        font-size: 28px;
+    }
+
+    .box-1 h2, .box-2 h2, .box-3 h2, .box-4 h2{
+        font-size: 20px;
+    }
+    
+    .box-1 p, .box-2 p, .box-3 p, .box-4 p{
+        font-size: 15px;
+    }
+
+    .quiz h1{
+        font-size: 22px;
+    }
+
+    #quiz p{
+        font-size: 17px;
+    }
+
+    .quiz-info h3{
+        font-size: 17px;
+    }
+
+    #first-info{
+        font-size: 12px;
+    }
+
+    #points-info{
+        font-size: 10px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .header-container{
+        font-size: 25px;
+    }
+
+    .brand-title{
+        font-size: 17px;
+    }
+
+    .post-tittle{
+        font-size: 35px;
+    }
+
+    .img-info h2{
+        font-size: 25px;
+    }
+
+    .img-info p{
+        font-size: 18px;
+    }
+
+    .second-article{
+        font-size: 35px;
+    }
+
+    .box-1 h2, .box-2 h2, .box-3 h2, .box-4 h2{
+        font-size: 25px;
+    }
+    
+    .box-1 p, .box-2 p, .box-3 p, .box-4 p{
+        font-size: 18px;
+    }
+    
+    .navbar-links li{
+        font-size: 17px;
+    }
+
+    .quiz h1{
+        font-size: 28px;
+    }
+
+    .quiz-info h3{
+        font-size: 22px;
+    }
+
+    #first-info{
+        font-size: 17px;
+    }
+
+    #points-info{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    
+    .header-container{
+        font-size: 30px;
+    }
+
+    .post-tittle{
+        font-size: 40px;
+    }
+
+
+    .img-info h2{
+        font-size: 30px;
+    }
+
+    .img-info p{
+        font-size: 22px;
+    }
+
+    .second-article{
+        font-size: 40px;
+    }
+
+    .box-1 h2, .box-2 h2, .box-3 h2, .box-4 h2{
+        font-size: 30px;
+    }
+    
+    .box-1 p, .box-2 p, .box-3 p, .box-4 p{
+        font-size: 22px;
+    }
+
+    .quiz h1{
+        font-size: 30px;
+    }
+
+    .quiz-info h3{
+        font-size: 24px;
+    }
+
+    #first-info{
+        font-size: 19px;
+    }
+
+    #points-info{
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    
+    .header-container{
+        font-size: 35px;
+    }
+
+    .post-tittle{
+        font-size: 45px;
+    }
+
+    .img-info h2{
+        font-size: 35px;
+    }
+
+    .img-info p{
+        font-size: 27px;
+    }
+
+    .second-article{
+        font-size: 45px;
+    }
+
+    .box-1 h2, .box-2 h2, .box-3 h2, .box-4 h2{
+        font-size: 22px;
+    }
+    
+    .box-1 p, .box-2 p, .box-3 p, .box-4 p{
+        font-size: 15px;
+    }
+
+    .quiz h1{
+        font-size: 35px;
+    }
+
+    .quiz-info h3{
+        font-size: 28px;
+    }
+
+    #first-info{
+        font-size: 23px;
+    }
+
+    #points-info{
+        font-size: 21px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) and  (max-width: 1400px){
+    
+    .header-container{
+        font-size: 40px;
+    }
+
+    .post-tittle{
+        font-size: 50px;
+    }
+
+    .img-info h2{
+        font-size: 40px;
+    }
+
+    .img-info p{
+        font-size: 30px;
+    }
+
+    .second-article{
+        font-size: 50px;
+    }
+
+    .box-1 h2, .box-2 h2, .box-3 h2, .box-4 h2{
+        font-size: 25px;
+    }
+    
+    .box-1 p, .box-2 p, .box-3 p, .box-4 p{
+        font-size: 20px;
+    }
+
+    .quiz h1{
+        font-size: 40px;
+    }
+
+    .quiz-info h3{
+        font-size: 30px;
+    }
+
+    #first-info{
+        font-size: 25px;
+    }
+
+    #points-info{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1400px){
+    
+    .header-container{
+        font-size: 50px;
+    }
+
+    .post-tittle{
+        font-size: 65px;
+    }
+
+    .second-article{
+        font-size: 65px;
+    }
+
+    .img-info h2{
+        font-size: 55px;
+    }
+
+    .img-info p{
+        font-size: 35px;
+    }
+
+    .box-1 h2, .box-2 h2, .box-3 h2, .box-4 h2{
+        font-size: 28px;
+    }
+    
+    .box-1 p, .box-2 p, .box-3 p, .box-4 p{
+        font-size: 22px;
+    }
+
+    .quiz h1{
+        font-size: 45px;
+    }
+
+    .quiz-info h3{
+        font-size: 30px;
+    }
+
+    #first-info{
+        font-size: 25px;
+    }
+
+    #points-info{
+        font-size: 23px;
+    }
+
+    #picture{
+        width: 50%;
+    }
+}
+
